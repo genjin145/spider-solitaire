@@ -1,0 +1,22 @@
+:root {
+  --black: black;
+  --bg-primary: darkgreen;
+  --darkgreen: green;
+  --green: darkgreen;
+  --yellow: yellow;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+@import "./components/card";
+@import "./components/playgrounds";
+@import "./components/playground";
+@import "./components/field";
+@import "./components/camp";
+@import "./components/deck";
+@import "./components/loding";

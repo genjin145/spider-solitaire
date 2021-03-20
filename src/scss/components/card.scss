@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  padding-top: 139%;
+  width: 100%;
+  perspective: 1000px;
+  z-index: 1;
+
+  &__front,
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: transform .3s;
+    backface-visibility: hidden;
+  }
+
+  &__front {
+    background-image: url('../img/cards/2D.png');
+  }
+  
+  &__back {
+    transform: rotateY(180deg);
+    background-image: url('../img/back_1.png');
+    border: 1px solid var(--black);
+  }
+
+  &_inverted {
+    .card__front{
+      transform: rotateY(180deg);
+      transition: none;
+    }
+    
+    .card__back{
+      transform: rotateY(360deg);
+      transition: none;
+    }
+  }
+}

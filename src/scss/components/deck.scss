@@ -1,0 +1,14 @@
+.deck {
+  position: relative;
+  grid-column: 10 / span 1;
+  padding-top: 139%;
+  background-color: var(--darkgreen);
+  background-size: cover;
+  border-radius: 5px;
+
+  .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.playground {
+  position: relative;
+  padding-top: 139%;
+  width: 100%;
+  background-color: green;
+  border-radius: 5px;
+
+  .card {
+    position: absolute;
+
+    @for $i from 1 through 30 {
+      &:nth-child(#{$i}) {
+        top: ($i - 1) * 25px;
+      }
+    }
+  }
+}
